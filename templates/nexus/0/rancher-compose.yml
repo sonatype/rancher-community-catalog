@@ -1,0 +1,17 @@
+.catalog:
+  name: "Nexus Repository Manager 3"
+  version: "3.0.2"
+  description: "Sonatype Nexus Repository Manager 3"
+  questions:
+  - variable: "PORT"
+    type: "int"
+    label: "Port Number"
+    description: "The host port to map the Nexus service."
+    default: 8080
+    required: true
+  - variable: "HOST_VOLUME"
+    description: "Host volume to save Nexus data and configuration"
+    label: "Host Volume"
+    required: true
+    default: "/opt/sonatype/nexus-data"
+    type: "string"
